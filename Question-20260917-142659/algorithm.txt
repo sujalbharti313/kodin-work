@@ -1,0 +1,5 @@
+Step 1: Start
+Step 2: Create a class animal 
+Step 3: Create a class dog which extends the animal class
+Step 4: Then create a class untitled with objects dog d1
+Step 5: End
