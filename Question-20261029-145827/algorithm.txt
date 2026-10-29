@@ -1,0 +1,16 @@
+Part A: Without Synchronization
+  1. Create a class Race that extends Thread and declare a static integer count=0.
+  2. Override run() to increment count 100000 times using a standard for loop (count++).
+  3. In Main, instantiate two thread objects(t1 and t2).
+  4. Start both threads using t1.start() and t2.start() to excecute concurrently
+  5. Wait for termination using t1.join() and t2.join().
+  6. Print count, observing data loss due to overlapping execution(race condition).
+
+
+Part B: With synchronization
+  1. Create a class RaceSynchronized that extends thread and declare a static integer count=0.
+  2. Override run() to loop 100,000 times placing the increment step inside a synchronized(RaceSynchronized.class) block
+  3. In main, instantiate two thread objects (t1 and t2)
+  4. Start both threads using t1.start() and t2.start()
+  5. Wait for termination using t1.join() and t2.join()
+  6. Print count, which will accurately display exactly 200,000 due to mutual exclusion
