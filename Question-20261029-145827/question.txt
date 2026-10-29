@@ -1,0 +1,10 @@
+A banking transaction monitoring system maintains a shared variable count to record the total number of transactions processed by two worker threads. Each worker thread must increment the shared counter 100,000 times.
+
+Develop a Java program using the Thread class to demonstrate the effects of concurrent access to a shared variable.
+
+Requirements:
+1. Create a class Race that extends the Thread class and declare a static integer variable count = 0.
+2. Create two threads, t1 and t2, where each thread increments count 100,000 times inside its run() method.
+3. Part A — Without Synchronization: Implement the program without using synchronized. Start both threads, wait for their completion using join(), and display the expected and actual counter values.
+4. Part B — With Synchronization: Modify the same program by using an appropriate synchronization mechanism to ensure that only one thread increments the shared counter at a time. Execute the program again and display the expected and actual values.
+5. Run both versions multiple times and compare the results.
