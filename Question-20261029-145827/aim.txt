@@ -1,0 +1,1 @@
+To demonstarte the concept of multithreading in Java and observe the effects of thread interference on shared data with and without synchronization
