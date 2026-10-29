@@ -1,0 +1,2 @@
+Without Synchronnization we have learn multiple threads accessing shared data simultaneously cause a race condition leading to data corruption and inaccurate results.
+With Synchronization we have learn enforcing the mutual exclusion ensures thread safety prevents data loss and guarantes an accurate final outputs 
